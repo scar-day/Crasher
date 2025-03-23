@@ -3,6 +3,7 @@ import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 plugins {
     id("java")
     id("com.gradleup.shadow") version("8.3.1")
+    id("de.eldoria.plugin-yml.bukkit") version "0.7.1" // fork minecrell
 }
 
 group = "dev.scarday"
@@ -44,6 +45,10 @@ tasks.withType<ShadowJar> {
     relocate("net.kyori", "dev.scarday.libs")
     relocate("eu.okaeri", "dev.scarday.libs")
     relocate("dev.rollczi", "dev.scarday.libs")
+}
 
-
+bukkit {
+    apiVersion = "1.13"
+    author = "ScarDay"
+    loadBefore = listOf("VirtualEntityApi", "BLib")
 }
