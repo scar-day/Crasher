@@ -14,6 +14,6 @@ public class PlayerQuitListener implements Listener {
 
     @EventHandler
     public void onPlayerQuit(PlayerQuitEvent event) {
-        // TODO: Реализовать удаление ВСЕХ с трекеера энтити при выходе с сервера
+        // TODO: Реализовать удаление ВСЕХ энтитии если ИГРОК вышел
     }
 }
