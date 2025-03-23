@@ -1,0 +1,8 @@
+name: Crash
+version: '1.0'
+main: dev.scarday.crash.Crash
+authors: [ ScarDay ]
+api-version: 1.13
+loadbefore:
+  - VirtualEntityApi
+  - BLib
